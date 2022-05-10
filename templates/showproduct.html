@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PRODUCT LIST</title>
+</head>
+<body>
+    <a href="/">HOME</a>
+    <table border="1">
+        <thead>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Product Quantity</th>
+            <th>Product Price</th>
+            <th>Product Vendor</th>
+        </thead>
+
+    <tbody>
+
+    {% for prd in productlist %}
+        <tr>
+                <td>{{prd.productId}}</td>
+                <td>{{prd.productName}}</td>
+                <td>{{prd.productQuantiyt}}</td>
+                <td>{{prd.productPrice}}</td>
+                <td>{{prd.productVendor}}</td>
+
+        </tr>
+    {% end for%}
+
+    </tbody>
+    </table>
+
+    </form>
+
+</body>
+</html>
